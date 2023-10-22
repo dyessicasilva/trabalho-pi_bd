@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = filter_var($user, FILTER_SANITIZE_STRING);
 
 
+    
     if (empty($nome) || empty($email) || empty($senha) || empty($user)) {
         echo "Por favor, preencha todos os campos.";
     } else {
